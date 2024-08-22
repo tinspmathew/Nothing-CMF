@@ -1,0 +1,302 @@
+/* importing necessary fonts */
+@font-face {
+    font-family: 'LetteraMonoLL Regular';
+    src: url('media/fonts/LetteraMonoLL-Regular.otf');
+}
+
+@font-face {
+    font-family: 'NType82';
+    src: url('media/fonts/NType82-Regular.otf');
+}
+
+@font-face {
+    font-family: 'NType82-bold';
+    src: url('media/fonts/NType82-Headline.otf');
+}
+
+@font-face {
+    font-family: 'Ndot-55';
+    src: url('media/fonts/Ndot-55.otf');
+}
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* converting nav to sticky */
+.navbar{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+/* removing defalut navbar toggle style */
+
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* navbar brand style */
+
+.navbar-brand{
+    font-family: 'Ndot-55';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+/* nav link style */
+.nav-link{
+    font-family: NType82-bold;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+/* height of product banner image */
+.product-banner{
+    height: 90vh;
+}
+
+
+/* product banner */
+.product-banner{
+    background-position: center;
+    background-size: cover;
+}
+
+.phone2aplus{
+    background-image: url('media/phone-2a-plus.webp');
+
+}
+
+/* cmf */
+.cmf{
+    background-image: url('media/cmf.webp');
+}
+
+/* communnity edition */
+.community{
+    background-image: url('media/community.webp');
+}
+
+/* special edition */
+.special{
+    background-image: url('media/special.webp');
+}
+
+
+/* phone 2a */
+.phone2a{
+    background-image: url('media/phone2a.webp');
+}
+
+/* ear */
+.ear{
+    background-image: url('media/ear.webp');
+}
+
+
+/* ear a */
+.eara{
+    background-image: url('media/eara.webp');
+}
+
+/* glyph */
+.glyph{
+    background-image: url('media/glyph.webp');
+}
+
+/* phone 2 */
+.phone2{
+    background-image: url('media/phone2.webp');
+}
+
+/* changing background on small screen */
+@media screen and (max-width:992px){
+    .phone2aplus{
+        background-image: url('media/phone-2a-plus-small.webp');
+    
+    }
+    
+    /* cmf */
+    .cmf{
+        background-image: url('media/cmf-small.webp');
+    }
+    
+    /* communnity edition */
+    .community{
+        background-image: url('media/community-small.webp');
+    }
+    
+    /* special edition */
+    .special{
+        background-image: url('media/special-small.webp');
+    }
+    
+    
+    /* phone 2a */
+    .phone2a{
+        background-image: url('media/phone-2a-small.webp');
+    }
+    
+    /* ear */
+    .ear{
+        background-image: url('media/ear-small.webp');
+    }
+    
+    
+    /* ear a */
+    .eara{
+        background-image: url('media/eara-small.webp');
+    }
+    
+    /* glyph */
+    .glyph{
+        background-image: url('media/glyph-small.webp');
+    }
+    
+    /* phone 2 */
+    .phone2{
+        background-image: url('media/phone2-small.webp');
+    }
+}
+/* vertical product heading */
+.product-heading{
+    writing-mode: vertical-lr;
+    font-family: 'Ndot-55';
+    font-weight: 400;
+    font-size: 7.5rem;
+}
+/* white heading  */
+.white-heading{
+    color: white;
+}
+/* phone name */
+.phone-info > h3{
+    font-family: 'NType82-bold';
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.phone-info > p{
+    font-family: NType82-bold;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+/* button */
+.blue-button{
+    background-color: rgb(0, 40, 92);
+    color: white;
+    font-family: NType82-bold;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 992px) {
+    .product-heading{
+        font-size: 3rem;
+    }
+}
+
+
+/* style for features */
+
+.feature > h2{
+    font-family: NType82;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.feature > p{
+    font-family: NType82;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 992px){
+    .feature > p, .feature > h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+
+/* main input style */
+.mail >  input{
+    background-color: black;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    height: 3rem;
+    /* border-radius: 1rem; */
+}
+
+.mail > input::placeholder{
+    color: white;
+    padding: 1rem;    
+    font-size: 0.9rem;
+    font-family: NType82;
+}
+.mail > input::-ms-input-placeholder { /* Edge 12 -18 */
+    color: white;
+    padding: 1rem;    
+    font-size: 0.9rem;
+    font-family: NType82;
+  }
+.mail > h6{
+    font-size: 0.9rem;
+    font-family: NType82;
+    
+}
+
+/* list styling */
+.list > ul{
+    list-style: none inside;
+    padding-left: 0;
+    font-size: 0.9rem;
+    font-family: NType82;
+}
+
+.list > h6{
+    font-size: 0.9rem;
+    font-family: NType82;
+
+}
+
+
+/* social media section */
+
+.social{
+    background-color: black;
+    color: white;
+}
+
+.links{
+    font-size: 0.9rem;
+    font-family: NType82;
+}
+
+
+.social > .row > p{
+    font-size: 0.9rem;
+    font-family: NType82;
+}
+
+.social-media-div{
+    border-top: 2px solid grey;
+    background-color: black;
+}
